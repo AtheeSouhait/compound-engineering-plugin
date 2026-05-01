@@ -1,5 +1,37 @@
 # Changelog
 
+## [3.4.0](https://github.com/AtheeSouhait/compound-engineering-plugin/compare/cli-v3.3.2...cli-v3.4.0) (2026-05-01)
+
+
+### Features
+
+* **ce-compound:** add frontmatter parser-safety validator ([#697](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/697)) ([7eea2d1](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/7eea2d1cfe5c177e2d144b1e12f4957c75dac556))
+* **ce-ideate:** subject gate, surprise-me, and warrant contract ([#671](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/671)) ([6514b1f](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/6514b1fce5df62582673fe7274c97a90e9aea45c))
+* **ce-strategy,ce-product-pulse:** add PM skills for upstream anchor and outcome pulse ([#614](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/614)) ([cb8f9b3](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/cb8f9b348391d28f31ce367b9ff308980939c96f))
+* **ce-strategy:** move strategy doc to root and add frontmatter ([#732](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/732)) ([265cb42](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/265cb4280f22bbd2fd5cc45e338371442b6c1692))
+
+
+### Bug Fixes
+
+* **ce-code-review:** move run artifacts from .context/ to /tmp per AGENTS.md ([#690](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/690)) ([85e9a20](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/85e9a2073b09295b1a0771d4775d42b7142fd172))
+* **ce-code-review:** replace LFG with best-judgment auto-resolve ([#685](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/685)) ([9ba41a1](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/9ba41a14cadfe2eee75fe50485f72f38b09df00b))
+* **ce-code-review:** restate model override at dispatch point ([#681](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/681)) ([9751d1a](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/9751d1a30a39fcfe17a9e052d32dbc9a5deafd02))
+* **ce-code-review:** tighten autofix_class rubric for safe_auto/gated_auto boundary ([#695](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/695)) ([ad9577e](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/ad9577e7329cba31cffba71815cac6cef290ae1b))
+* **ce-compound,ce-sessions:** handle non-git CWD in pre-resolved git branch ([#731](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/731)) ([5e04534](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/5e045341372fc95d284268d514a53da5722c81d2))
+* **ce-debug:** delegate commit/PR and add branch check ([#683](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/683)) ([1284290](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/1284290af27139c2df192488099626688fd4898b))
+* **ce-demo-reel:** wait for network idle and reject blank frames ([#692](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/692)) ([f30404e](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/f30404e57bcbf7866c1a9524f4392f7dff8f3a0b))
+* **ce-doc-review:** rename LFG path to best-judgment to avoid /lfg collision ([#691](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/691)) ([50bf65e](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/50bf65e88c556eaa1ae10c7d88d8e646274d7ae0))
+* **ce-plan:** inline post-generation menu routing so option 1 actually starts /ce-work ([#715](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/715)) ([0c515c0](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/0c515c06fe7efc77baf29b5512a768c930d50ba0))
+* **ce-sessions:** 722 ce-compound and ce-sessions permission error ([#723](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/723)) ([8f80466](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/8f804669b184bc68ef6dbab4669fe0e431d8271a))
+* **ce-work-beta:** defer model and reasoning effort to Codex config ([#704](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/704)) ([4b5f28d](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/4b5f28da9746aae8f2c5dd715d7029d0ab2758a6))
+* **main:** recover version drift, fix stale test, document learnings ([#678](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/678)) ([bc8ae1a](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/bc8ae1a6b5375f7fbb8120104b3222391da470bb))
+* **release:** remove stale release-as pin ([#674](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/674)) ([ab44d89](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/ab44d89b0b2b1f7dd57d9ce1604d42b0c11f6415))
+* **review:** default to harness-native code review, escalate on risk ([#721](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/721)) ([d217660](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/d217660b3d37acf38227abf5c57ba6f390ccaa1e))
+* **review:** queue reviewers when subagent slots fill ([#716](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/716)) ([d69a772](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/d69a772bb8682da23fa0b6a293245768e573254b))
+* **session-historian:** cap deep-dives, add keyword filter primitive, tighten dispatch ([#699](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/699)) ([a91270c](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/a91270ccd2d5fba3e035275b7af2c4fec3f90b1c))
+* **skills:** replace case statements blocked by permission check ([#701](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/701)) ([5952b20](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/5952b20d7f2a056f8d7d8719a2d20b6615aca9e4))
+* **skills:** replace shell antipatterns blocked by permission check ([#711](https://github.com/AtheeSouhait/compound-engineering-plugin/issues/711)) ([1f0a77b](https://github.com/AtheeSouhait/compound-engineering-plugin/commit/1f0a77bcc1e4edbf1b7979ea5cd13d1e553d4662))
+
 ## [3.3.2](https://github.com/EveryInc/compound-engineering-plugin/compare/cli-v3.3.1...cli-v3.3.2) (2026-04-29)
 
 
